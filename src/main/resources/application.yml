@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/consultation_medecin
+    username: postgres
+    password: ${DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+app:
+  cdn:
+    patient-root: ./cdn/patient
+  patient:
+    qr-base-url: http://localhost:8080/api/patients
+  qr-scheduler:
+    fixed-delay-ms: 300000
