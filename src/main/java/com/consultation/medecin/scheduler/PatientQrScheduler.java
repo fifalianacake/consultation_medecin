@@ -1,4 +1,4 @@
-package com.consultation.medecin.service;
+package com.consultation.medecin.scheduler;
 
 import com.consultation.medecin.model.Patient;
 import com.google.zxing.BarcodeFormat;
@@ -8,7 +8,6 @@ import com.google.zxing.qrcode.QRCodeWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
